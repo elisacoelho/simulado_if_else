@@ -5,12 +5,27 @@
     //Considere que, se o aluno ajudado obteve nota maior do que o aluno que ajudou (TUTOR), o programa apresentará na tela a mensagem "CRIA MAIOR QUE O CRIADOR" e também apresentará a nota do aluno ajudado.
     //Contudo, caso o aluno que ajudou (TUTOR) obteve maior nota, bonifique-o com um adicional de 10% da nota do aluno ajudado, e o programa apresentará a mensagem "CONTINUE ENSINANDO!" e também apresentará a nota final do aluno que ajudou (TUTOR).
 
-    //ENTRADA
+    constNota1 = Number(prompt(`Informe a nota que o aluno (tutor) obteve no terceiro trimestre:`));
+
+    constNota2 = Number(prompt(`Informe a nota que o aluno que foi ajudado obteve no terceiro trimestre:`));
+
+    constNota3= (constNota2 * 10/100)
+
+    constNota4 = (constNota3) + (constNota1);
 
 
-    //PROCESSAMENTO
 
 
-    //SAÍDA
+    if (constNota2 > constNota1) {
+        alert(`Cria maior que o criador! ${constNota2}`)
+    }
+
+    else if 
+        (constNota1 > constNota2) {
+
+            alert(`Continue ensinando. A nota final foi ${constNota4.toFixed(1).replace(".",",")}`)
+
+        }
+    
 
 </script>
